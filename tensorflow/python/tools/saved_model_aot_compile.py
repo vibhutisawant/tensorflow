@@ -303,6 +303,8 @@ def freeze_model(checkpoint_path: str,
   config = _signature_to_tf2xla_config(
       signature_def, variable_nodes_to_feed=variable_nodes_to_feed)
   logging.info('Writing config_pbtxt to: {}'.format(config_pbtxt_location))
+  logging.info('Taregt triple: {}'.format(target_triple))
+  logging.info('Taregt cpu: {}'.format(target_cpu))
   with file_io.FileIO(config_pbtxt_location, mode='w') as config_writer:
     config_writer.write(str(config))
   return frozen_graph_def_location, config_pbtxt_location
