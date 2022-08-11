@@ -785,9 +785,9 @@ Concrete Functions:
   @parameterized.named_parameters(
       ('VariablesToFeedNone', '', 'func2', None),
       ('VariablesToFeedNoneTargetAarch64Linux', '', 'func2',
-       'aarch64-none-linux-gnu'),
+       'x86_64-pc-linux'),
       ('VariablesToFeedNoneTargetAarch64Android', '', 'func2',
-       'aarch64-none-android'),
+       'x86_64-pc-linux'),
       ('VariablesToFeedAll', 'all', 'func2', None),
       ('VariablesToFeedMyVar', 'my_var', 'func2', None),
       ('VariablesToFeedNoneLargeConstant', '', 'func3', None),
